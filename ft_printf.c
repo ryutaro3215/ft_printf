@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: ryutaro320515 <ryutaro320515@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:04:47 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/25 22:12:26 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/10/26 13:29:48 by ryutaro3205      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,7 @@ int	judge_identifer(va_list argument, char word)
 
 int	main(void)
 {
-	char	*str = "pointer";
+	ft_printf("myprintf\nreturn : %d\n", INT_MIN);
 	printf("return value : %d\n",
-		ft_printf("myprintf\nreturn : %i\nreturn : %s\nreturn : %c\nreturn : %p\nreturn : %x\nreturn : %X\n", 1234, "string", 'c', str, 1234, 1234));
-	printf("return value : %d\n",
-		printf("original\nreturn : %i\nreturn : %s\nreturn : %c\nreturn : %p\nreturn : %x\nreturn : %X\n", 1234, "string", 'c', str, 1234, 1234));
+		printf("original\nreturn : %i\nreturn : %s\nreturn : %c\nreturn : %u\nreturn : %x\nreturn : %X\n", 1234, "string", 'c', UINT_MAX, 1234, 1234));
 }
