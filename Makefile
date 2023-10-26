@@ -6,11 +6,11 @@
 #    By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/21 17:09:00 by rmatsuba          #+#    #+#              #
-#    Updated: 2023/10/25 21:35:42 by rmatsuba         ###   ########.fr        #
+#    Updated: 2023/10/26 19:47:51 by rmatsuba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_printf.c ft_print_num.c ft_print_word.c ft_help.c 
+SRCS = ft_printf.c ft_print_num.c ft_print_word.c ft_help.c ft_print_pointer.c
 OBJS = ${SRCS:.c=.o}
 CFLAGS = -Wall -Wextra -Werror
 CC = cc
