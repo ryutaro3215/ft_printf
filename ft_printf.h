@@ -6,7 +6,7 @@
 /*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:01:39 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 19:44:47 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/10/26 20:01:19 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int	ft_count_unsigned_int(unsigned int num);
 int	ft_count_hex(unsigned int num);
 int	ft_print_pointer(unsigned long long address);
 int	ft_count_pointer(unsigned long long address);
+int	ft_print_address(unsigned long long address);
 
 #endif
