@@ -1,5 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
+/* ************************************************************************** */ /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_print_pointer.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
@@ -27,6 +26,17 @@ int	ft_count_pointer(unsigned long long address)
 	return (address_count);
 }
 
+int	ft_print_address(unsigned long long address)
+{
+	if (address >= 16)
+		ft_print_address(address / 16);
+	if (address % 16 >= 10)
+		ft_print_char((address % 16 - 10) + 'a');
+	else
+		ft_print_char((address % 16) + '0');
+	return (ft_count_hex(address));
+}
+
 int	ft_print_pointer(unsigned long long address)
 {
 	int	address_len;
@@ -35,7 +45,7 @@ int	ft_print_pointer(unsigned long long address)
 	write(1, "0x", 2);
 	address_len += 2;
 	if (address >= 16)
-		ft_print_low_hex(address / 16);
+		ft_print_address(address / 16);
 	if (address % 16 >= 10)
 		ft_print_char((address % 16 - 10) + 'a');
 	else
