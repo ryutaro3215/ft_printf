@@ -6,7 +6,7 @@
 /*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:01:39 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 18:43:05 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/10/26 19:44:47 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <limits.h>
-
 
 int	ft_printf(const char *str, ...);
 int	judge_identifer(va_list argument, char word);

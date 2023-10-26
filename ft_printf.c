@@ -6,7 +6,7 @@
 /*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:04:47 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 19:40:32 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/10/26 19:45:28 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,15 +64,17 @@ int	judge_identifer(va_list argument, char word)
 	return (print_len);
 }
 
-int	main(void)
-{
-	char *str = NULL;
-	char *string;
-	string = "";
-	printf("return value : %d\n",
-	printf("original\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\ninteger : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
-		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
-	ft_printf("return value : %d\n",
-	ft_printf("myprintf\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\ninteger : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
-		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
-}
+// int	main(void)
+// {
+// 	char *str = NULL;
+// 	char *string;
+// 	string = "";
+// 	printf("return value : %d\n",
+// 	printf("original\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\n
+//	integer : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
+// 		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
+// 	ft_printf("return value : %d\n",
+// 	ft_printf("myprintf\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\n
+//	integer : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
+// 		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
+// }

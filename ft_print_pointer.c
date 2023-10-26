@@ -6,12 +6,11 @@
 /*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 18:37:03 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 19:31:26 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/10/26 19:44:37 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
 
 int	ft_count_pointer(unsigned long long address)
 {
