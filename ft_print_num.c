@@ -6,7 +6,7 @@
 /*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 17:57:18 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/25 21:41:14 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/10/26 18:09:22 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_print_low_hex(unsigned int num)
 	if (num % 16 >= 10)
 		ft_print_char((num % 16 - 10) + 'a');
 	else
-		ft_print_char((num % 16) - '0');
+		ft_print_char((num % 16) + '0');
 	return (ft_count_hex(num));
 }
 
@@ -59,6 +59,6 @@ int	ft_print_upp_hex(unsigned int num)
 	if (num % 16 >= 10)
 		ft_print_char((num % 16 - 10) + 'A');
 	else
-		ft_print_char((num % 16) - '0');
+		ft_print_char((num % 16) + '0');
 	return (ft_count_hex(num));
 }

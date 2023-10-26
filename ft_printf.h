@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryutaro320515 <ryutaro320515@student.42    +#+  +:+       +#+        */
+/*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:01:39 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 13:25:58 by ryutaro3205      ###   ########.fr       */
+/*   Updated: 2023/10/26 18:43:05 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,7 @@ int	ft_strlen(char *str);
 int	ft_count_int(int num);
 int	ft_count_unsigned_int(unsigned int num);
 int	ft_count_hex(unsigned int num);
+int	ft_print_pointer(unsigned long long address);
+int	ft_count_pointer(unsigned long long address);
 
 #endif

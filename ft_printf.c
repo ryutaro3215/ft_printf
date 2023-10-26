@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryutaro320515 <ryutaro320515@student.42    +#+  +:+       +#+        */
+/*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:04:47 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 13:29:48 by ryutaro3205      ###   ########.fr       */
+/*   Updated: 2023/10/26 19:40:32 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	ft_printf(const char *str, ...)
 		}
 		i++;
 	}
+	va_end(argument);
 	return (print_len);
 }
 
@@ -47,7 +48,7 @@ int	judge_identifer(va_list argument, char word)
 	else if (word == 's')
 		print_len = ft_print_string(va_arg(argument, char *));
 	else if (word == 'p')
-		print_len = ft_print_low_hex(va_arg(argument, unsigned int));
+		print_len = ft_print_pointer(va_arg(argument, unsigned long long));
 	else if (word == 'd' || word == 'i')
 		print_len = ft_print_signed_int(va_arg(argument, int));
 	else if (word == 'u')
@@ -58,12 +59,20 @@ int	judge_identifer(va_list argument, char word)
 		print_len = ft_print_upp_hex(va_arg(argument, unsigned int));
 	else if (word == '%')
 		print_len = ft_print_char('%');
+	else
+		print_len = ft_print_char(word);
 	return (print_len);
 }
 
 int	main(void)
 {
-	ft_printf("myprintf\nreturn : %d\n", INT_MIN);
+	char *str = NULL;
+	char *string;
+	string = "";
 	printf("return value : %d\n",
-		printf("original\nreturn : %i\nreturn : %s\nreturn : %c\nreturn : %u\nreturn : %x\nreturn : %X\n", 1234, "string", 'c', UINT_MAX, 1234, 1234));
+	printf("original\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\ninteger : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
+		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
+	ft_printf("return value : %d\n",
+	ft_printf("myprintf\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\ninteger : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
+		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
 }

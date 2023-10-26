@@ -6,7 +6,7 @@
 /*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 18:34:48 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/25 22:07:48 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/10/26 19:39:57 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
+	if (str == NULL)
+		return (0);
 	while (str[i] != '\0')
 		i++;
 	return (i);
@@ -49,6 +51,8 @@ int	ft_count_unsigned_int(unsigned int num)
 	int		digit_count;
 
 	digit_count = 0;
+	if (num == 0)
+		return (1);
 	while (num > 0)
 	{
 		digit_count++;
@@ -62,11 +66,12 @@ int	ft_count_hex(unsigned int num)
 	int		hex_count;
 
 	hex_count = 0;
-	while (num > 16)
+	if (num == 0)
+		return (1);
+	while (num > 0)
 	{
 		hex_count++;
 		num = num / 16;
 	}
-	hex_count++;
 	return (hex_count);
 }
