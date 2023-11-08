@@ -6,7 +6,7 @@
 /*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:04:47 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 19:45:28 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2023/11/08 21:47:28 by rmatsuba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	judge_identifer(va_list argument, char word)
 	else if (word == '%')
 		print_len = ft_print_char('%');
 	else
-		print_len = ft_print_char(word);
+		print_len = ft_print_char('\0');
 	return (print_len);
 }
 
@@ -71,10 +71,10 @@ int	judge_identifer(va_list argument, char word)
 // 	string = "";
 // 	printf("return value : %d\n",
 // 	printf("original\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\n
-//	integer : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
+// 	integer : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
 // 		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
 // 	ft_printf("return value : %d\n",
 // 	ft_printf("myprintf\nchar : %c\nstring : %s\npointer : %p\ninteger : %i\n
-//	integer : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
+// 	integer : %d\nunint : %u\nlowhex : %x\nupphex : %X\n", 
 // 		'\t', string, str, INT_MIN, INT_MAX, UINT_MAX, 1234, 1234));
 // }
