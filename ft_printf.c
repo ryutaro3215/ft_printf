@@ -60,7 +60,7 @@ int	judge_identifer(va_list argument, char word)
 	else if (word == '%')
 		print_len = ft_print_char('%');
 	else
-		print_len = ft_print_char('\0');
+		print_len = 0;
 	return (print_len);
 }
 
