@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmatsuba <rmatsuba@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: ryutaro320515 <ryutaro320515@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:01:39 by rmatsuba          #+#    #+#             */
-/*   Updated: 2023/10/26 21:04:35 by rmatsuba         ###   ########.fr       */
+/*   Updated: 2024/05/08 11:37:30 by ryutaro3205      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <limits.h>
 
 int	ft_printf(const char *str, ...);
-int	judge_identifer(va_list argument, char word);
+int	judge_identifer(va_list *argument, char word);
 int	ft_print_char(int chr);
 int	ft_print_string(char *str);
 int	ft_print_signed_int(int num);
