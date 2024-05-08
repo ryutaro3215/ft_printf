@@ -6,13 +6,13 @@
 /*   By: ryutaro320515 <ryutaro320515@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:04:47 by rmatsuba          #+#    #+#             */
-/*   Updated: 2024/05/08 11:37:51 by ryutaro3205      ###   ########.fr       */
+/*   Updated: 2024/05/08 12:00:34 by ryutaro3205      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	judge_identifer(va_list argument, char word);
+int	judge_identifer(va_list *argument, char word);
 
 int	ft_printf(const char *str, ...)
 {
